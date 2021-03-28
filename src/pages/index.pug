@@ -1,6 +1,7 @@
 include ../toxin/header/header
 include ../toxin/footer/footer
-include ../toxin/input/input
+include ../toxin/checkbox/checkbox
+include ../toxin/radio/radio
 
 doctype html
 html
@@ -10,3 +11,7 @@ html
     body
         +header
         +footer
+        +checkbox('check1') this
+        +radio('r1') that
+        +radio('r2') that
+

@@ -1,0 +1,8 @@
+include ./__label/checkbox__label
+include ./__box/checkbox__box
+
+mixin checkbox(id, style)
+    .checkbox
+        +checkbox__box(id, style)
+        +checkbox__label(id, style)
+            block

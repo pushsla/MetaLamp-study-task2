@@ -1,0 +1,8 @@
+include ./__label/radio__label
+include ./__box/radio__box
+
+mixin radio(id, style)
+    .radio
+        +radio__box(id, style)
+        +radio__label(id, style)
+            block
