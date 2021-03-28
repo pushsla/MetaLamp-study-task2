@@ -1,0 +1,8 @@
+include ./__field/input__field
+include ./__label/input__label
+
+mixin input(id, type, placeholder, style, mask)
+    .input
+        +input__field(id, type, placeholder, style, mask)
+        +input__label(id, style)
+            block

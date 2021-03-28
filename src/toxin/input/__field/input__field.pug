@@ -1,0 +1,6 @@
+mixin input__field(id, type, placeholder, style, mask)
+    .input__field(class=` ${style ? " input__field_"+style : ""}`)
+        if mask
+            input.input-pseudo(placeholder=placeholder ? placeholder : "", type=type ? type : "text", data-mask=mask)
+        else
+            input.input-pseudo(placeholder=placeholder ? placeholder : "", type=type ? type : "text", )

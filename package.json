@@ -7,6 +7,10 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery-mask-plugin": "^1.14.16"
+  },
   "devDependencies": {
     "css-loader": "^5.2.0",
     "dart-sass": "^1.25.0",

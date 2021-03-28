@@ -1,0 +1,18 @@
+@import "../../toxin"
+
+.input-pseudo
+  height: 100%
+  width: 100%
+  border: none
+  &:focus
+    outline: none
+
+.input__field
+  height: 44px
+  padding: 13px 15px
+  font: $font__body
+  color: rgba($color__dark-shade, .75)
+  border: 1px solid rgba($color__dark-shade, .25)
+  border-radius: 4px
+  &:hover,&:focus
+    border-color: rgba($color__dark-shade, .5)
