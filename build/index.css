@@ -205,15 +205,6 @@ body {
   font: normal 14px "Montserrat", sans-serif;
 }
 
-.input-pseudo {
-  height: 100%;
-  width: 100%;
-  border: none;
-}
-.input-pseudo:focus {
-  outline: none;
-}
-
 .input__field {
   height: 44px;
   padding: 13px 15px;
@@ -223,14 +214,11 @@ body {
   border-radius: 4px;
 }
 .input__field:hover, .input__field:focus {
+  outline: none;
   border-color: rgba(31, 32, 65, 0.5);
 }
 .input__field_arrowed {
-  display: flex;
-}
-.input__field_arrowed::after {
-  display: inline-block;
-  content: url(ae9e8d9bc1e9ad88ca1c.svg);
+  background: url(ae9e8d9bc1e9ad88ca1c.svg) no-repeat scroll 96% 50%;
 }
 * {
   box-sizing: border-box;
