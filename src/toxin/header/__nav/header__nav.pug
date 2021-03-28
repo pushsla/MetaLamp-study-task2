@@ -1,0 +1,17 @@
+include ../../headermenu/headermenu
+
+mixin header__nav(entries)
+    nav.header__nav
+        +headermenu([
+            {text: 'О нас'},
+            {text: "Услуги", submenu: [
+                    {text: "Продвижение"},
+                    {text: "Оценка успешности"}
+                ]},
+            {text: "Вакансии"},
+            {text: "Новости"},
+            {text: "Соглашения", submenu: [
+                    {text: "Соглашение о конфиденциальности"},
+                    {text: "Соглашение о неразглашении"}
+                ]}
+            ])

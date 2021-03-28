@@ -1,0 +1,3 @@
+mixin button(styles)
+    button(class=`button${(styles) ? " button_" + styles.reduce((accum, val) => accum + " button_"+val) : ""}`)
+        block

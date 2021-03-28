@@ -1,0 +1,19 @@
+@import "../../toxin"
+
+.header__person
+  display: flex
+  column-gap: 20px
+  justify-content: flex-start
+  &_authorized
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font: $font__body
+    opacity: .5
+    height: 30px
+    &::before
+      content: ""
+      border-left: 2px solid $color__dark-shade
+      opacity: .1
+      height: 100%

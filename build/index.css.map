@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://task2/./src/toxin/button/button.sass"],"names":[],"mappings":"AAAA;EACE;AACF,C","file":"index.css","sourcesContent":[".button\n  background-color: #f0f"],"sourceRoot":""}

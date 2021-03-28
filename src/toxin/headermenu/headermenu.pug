@@ -1,0 +1,10 @@
+mixin headermenu(entries, is_submenu)
+    ul(class=`${is_submenu ? "headermenu headermenu__submenu" : "headermenu"}`)
+        each entry, index in entries
+            - var classes = (index === 0) ? " headermenu__entry_active" : "";
+            if entry.submenu
+                li.headermenu__entry.headermenu__link.headermenu__entry_expandable(class=classes)=entry.text
+                    +headermenu(entry.submenu, true)
+            else
+                li.headermenu__entry(class=classes)
+                    a.headermenu__link(href=`${entry.href}`)= entry.text

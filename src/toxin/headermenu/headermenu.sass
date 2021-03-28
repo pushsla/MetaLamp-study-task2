@@ -1,0 +1,40 @@
+@import "../toxin"
+
+.headermenu
+  display: flex
+  justify-content: flex-end
+  column-gap: 20px
+  align-items: center
+  list-style: none
+  &__entry
+    display: block
+    cursor: pointer
+    font: $font__body
+    opacity: .5
+    &_active
+      font-weight: bold
+      opacity: 1
+    &:hover
+      opacity: 1
+    &_expanded
+      &::after
+        transform: rotate(180deg)
+    &_expandable
+      &::after
+        display: inline-block
+        transition: transform .3s
+        content: url("/src/assets/expand_more.svg")
+  &__link
+    position: relative
+    color: $color__dark-shade
+    text-decoration: none
+  &__submenu
+    padding: 10px 0 0
+    position: absolute
+    top: 18px
+    left: 0
+    right: 0
+    display: none
+    flex-direction: column
+    align-items: flex-start
+    row-gap: 10px
