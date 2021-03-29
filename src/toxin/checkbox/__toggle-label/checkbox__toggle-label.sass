@@ -1,15 +1,17 @@
-.radio__label
+.checkbox__toggle-label
   display: flex
   align-items: center
   justify-content: flex-start
   cursor: pointer
-  color: rgba(var(--color__dark-shade_rgb), .5)
+  color: rgba(var(--color__dark-shade_rgb), 1)
   &::before
     display: block
     content: ""
     height: 20px
-    width: 20px
+    width: 40px
     border: 1px solid rgba(var(--color__dark-shade_rgb), .25)
-    transition: all .3
-    border-radius: 50%
+    background: url("unchecked.svg") no-repeat 4px center
+    background-size: 12px 12px
+    transition: all .3s
+    border-radius: 10px
     margin-right: 10px

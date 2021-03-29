@@ -1,24 +1,28 @@
-$color__dark-shade: #1f2041
-$color__purple: #bc9cff
-$color__green: #6fcf97
-$color__blue: #8BA4F9
-$color__sky: #66D2EA
-$color__white: #fff
+\:root
+  --color__dark-shade: #1f2041
+  --color__dark-shade_rgb: 31,32,65
+  --color__purple: #bc9cff
+  --color__green: #6fcf97
+  --color__blue: #8BA4F9
+  --color__sky: #66D2EA
+  --color__white: #fff
 
-$font__family: 'Montserrat', sans-serif
-$font__h1: bold 24px $font__family
-$font__h2: bold 19px $font__family
-$font__h3: bold 12px $font__family
-$font__body: normal 14px $font__family
-$font__button: bold 12px $font__family
-$font__label: bold 12px $font__family
+  --font__family: 'Montserrat', sans-serif
+  --font__h1: bold 24px var(--font__family)
+  --font__h2: bold 19px var(--font__family)
+  --font__h3: bold 12px var(--font__family)
+  --font__body: normal 14px var(--font__family)
+  --font__button: bold 12px var(--font__family)
+  --font__label: bold 12px var(--font__family)
 
-$background__gradient_purple: linear-gradient(180deg, $color__purple 0%, $color__blue 100%)
-$background__gradient_green: linear-gradient(180deg, $color__green 0%, $color__sky 100%)
+  --background__gradient_purple: linear-gradient(180deg, var(--color__purple) 0%, var(--color__blue) 100%)
+  --background__gradient_green: linear-gradient(180deg, var(--color__green) 0%, var(--color__sky) 100%)
 
 *
   box-sizing: border-box
+  &:before,&:after
+    box-sizing: border-box
 body
   padding: 0
   margin: 0
-  font: $font__body
+  font: var(--font__body)

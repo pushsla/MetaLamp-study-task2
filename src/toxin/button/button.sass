@@ -1,20 +1,18 @@
-@import "../toxin"
-
 .button
   position: relative
   height: 44px
   padding: 0 19px
   border: none
   border-radius: 22px
-  font: $font__button
+  font: var(--font__button)
   text-transform: uppercase
   cursor: pointer
   &_primary
-    color: $color__white
-    background: $background__gradient_purple
+    color: var(--color__white)
+    background: var(--background__gradient_purple)
   &_secondary
-    background: $color__white
-    color: $color__purple
+    background: var(--color__white)
+    color: var(--color__purple)
     &::after
       position: absolute
       top: -2px
@@ -24,7 +22,7 @@
       content: ''
       z-index: -1
       border-radius: 22px
-      background: $background__gradient_purple
+      background: var(--background__gradient_purple)
   &_inactive
     opacity: .5
     &::after

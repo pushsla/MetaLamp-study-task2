@@ -1,8 +1,13 @@
 include ./__label/checkbox__label
+include ./__toggle-label/checkbox__toggle-label
 include ./__box/checkbox__box
 
 mixin checkbox(id, style)
-    .checkbox
+    .checkbox(class=style ? " checkbox_"+style: "")
         +checkbox__box(id, style)
-        +checkbox__label(id, style)
-            block
+        if style === 'toggle'
+            +checkbox__toggle-label(id, style)
+                block
+        else
+            +checkbox__label(id, style)
+                block
